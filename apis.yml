@@ -1,4 +1,16 @@
 aid: vaccitech
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/vaccitech.png
 name: Vaccitech *
 description: 'Vaccitech * is a company surfaced as a portfolio company of gv and added to the API Evangelist
   network as a stub for enrichment. Sector: life-sciences. This profile is a lead awaiting the enrichment
@@ -12,7 +24,7 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
 - Life Sciences
@@ -23,5 +35,16 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/vaccitech-domain-security.yml
 - type: Website
-  url: http://vaccitech.co.uk
+  url: https://vaccitech.co.uk
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
+  note: 'Vaccitech rebranded to Barinthus Biotherapeutics (clinical-stage biopharma,
+    Germantown MD); vaccitech.co.uk 301-redirects to www.barinthusbio.com. No API,
+    developer portal, SDK, well-known, or llms.txt surface exists (all probes 404).
+    Only a probed DomainSecurity artifact was produced.'
